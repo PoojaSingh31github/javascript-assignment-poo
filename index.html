@@ -1,0 +1,48 @@
+
+<!-- first of all we press the shift+1 to generate the boiler plate..... then I give the suitable title to it .  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- this is the title which visible on tab of search engine -->
+  <title>Simple Calculator</title>
+  <!-- linked css  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Calculator</h1>
+    <form action="">
+        <div class="inputs">
+            <div class="m1">
+                <!-- for inserting the number first -->
+                <label for="num1">Number 1</label>
+                <input type="text" id="num1" placeholder="Number 1" required>
+            </div>
+        
+            <div class="m1">
+                <!-- for using the operator of addtion, subtraction, multiplication and divide -->
+                <label for="opertor">Operator</label>
+                <select name="opertor" id="slt" aria-placeholder="opertor" type="checkbox" placeholder="Operator">
+                    <option value=" ">   </option>
+                    <option value="+"> + </option>
+                    <option value="-"> - </option>
+                    <option value="*"> * </option>
+                    <option value="/"> / </option>
+                </select>
+            </div>
+            <div class="m1">
+                <!-- for inserting the number second  -->
+                <label for="num2">Number 2</label>
+                <input type="text" id="num2" placeholder="Number 2" required>
+            </div>
+        </div>
+    </form>
+    <button onclick="method();calculate();">Submit</button>
+   <!-- here I make button which is clickable and when I click on it it run the function of method -->
+   <!-- Here, I used "readonly" which means..... the user can see the content and placeholder but cannot edit or modify it -->
+  <input type="text" id="result" placeholder="Answer" readonly>
+
+<!-- here i linked the javascript file  -->
+<script src="java.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* for the different font style or can say font family I used here the imported font family from the google font.....fist of all I selected the Dancing script with the font weight of 600(semibold) which is I used on h1 tag.
+Now if I talk about the second imported font family, I imported the kalam font family with the font weight of 300(light) */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600&family=Fuggles&family=Jost&family=Mooli&family=Roboto+Condensed&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600&family=Fuggles&family=Jost&family=Kalam:wght@300&family=Mooli&family=Roboto+Condensed&family=Sedgwick+Ave+Display&display=swap');
+/* to give margin padding boxsizing to all window screen (universal se lector) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* to body I gave background img with center */
+body{
+    text-align: center;
+    justify-content: center;
+    padding: 20%;
+    height: 100vh;
+    background-image: url("./img/Madara\ Uchiha.jpg");
+    /* opacity:     .5; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+}
+/* to look side by side i gave display flex and for some space between them I used "justify content space betweeen" */
+.inputs{
+    display:flex;
+    justify-content:space-between;
+}
+/* here I give the font family of dancing script with font weight to my heading of my calculator */
+h1{
+    font-family: 'Alex Brush', cursive;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+/* i style inpit and select together becos i need to give them same look  */
+input,select{
+    padding: 10px;
+    background-color: beige;
+    font-weight: 800;
+    margin: 15px 0;
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+}
+button{
+    padding: 12px;
+    color: rgb(10, 10, 75);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    border: none;
+}
+/* To give same font family, I used diffrent tag in once placeholder value or (input value, button-text and select */
+button,input,select{
+    font-family: 'Jost', sans-serif;
+}
+/* Here, I give some hover effect to the button */
+button:hover{
+    color: rgb(241, 241, 241);
+    background-color: rgb(59, 211, 178);
+    cursor: pointer;
+    transition:  0.5s;
+}
+/* hovver effect to select  */
+select:hover option{
+    background: rgb(226, 138, 138);
+}
+/* this class, I given to my label div */
+.m1{
+    width: 33%;
+}
+h1,label{
+    color: #fff;
+}
+/* Here, I used some media query to make it responsive....*/
+@media only screen and (max-width: 400px) {
+    label{
+        color: red;
+    }
+}    
